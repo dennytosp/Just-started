@@ -49,7 +49,7 @@ const HeaderHome = ({scroll}) => {
 
   const backgroundColor = scroll.interpolate({
     inputRange: [0, HEADER_SCROLL_DISTANCE],
-    outputRange: [config?.backgroundcolor || COLORS.lightGreen, COLORS.white],
+    outputRange: [config?.backgroundcolor || COLORS.primary, COLORS.white],
     extrapolate: 'clamp',
   });
 
@@ -62,19 +62,19 @@ const HeaderHome = ({scroll}) => {
     inputRange: [0, HEADER_SCROLL_DISTANCE],
     outputRange: [
       COLORS.gray02,
-      config?.backgroundcolor || COLORS.lightGreen,
+      config?.backgroundcolor || COLORS.primary,
     ],
     extrapolate: 'clamp',
   });
 
   const colorimg = scroll.interpolate({
     inputRange: [0, HEADER_SCROLL_DISTANCE],
-    outputRange: [COLORS.white, config?.backgroundcolor || COLORS.lightGreen],
+    outputRange: [COLORS.white, config?.backgroundcolor || COLORS.primary],
     extrapolate: 'clamp',
   });
   const backgroundgray01 = scroll.interpolate({
     inputRange: [0, HEADER_SCROLL_DISTANCE],
-    outputRange: [config?.backgroundcolor || COLORS.lightGreen, COLORS.gray01],
+    outputRange: [config?.backgroundcolor || COLORS.primary, COLORS.gray01],
     extrapolate: 'clamp',
   });
   const isStatus = dark ? 'light-content' : 'dark-content';
@@ -136,7 +136,7 @@ const HeaderCommon = ({canGoBack, title, checkBackground}) => {
         
         backgroundColor: checkBackground
           ? COLORS.white
-          :COLORS.lightGreen,...styles.border
+          :COLORS.primary,...styles.border
       }}>
       {isFocused && <StatusBar barStyle="dark-content" translucent animated />}
       {canGoBack && (

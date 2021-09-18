@@ -95,7 +95,7 @@ export default CustomTabBar;
 const styles = StyleSheet.create({
   btn: {flex: 1, alignItems: 'center'},
   textlabel: isFocused => ({
-    color: isFocused ? COLORS.lightGreen : COLORS.black,
+    color: isFocused ? COLORS.primary : COLORS.black,
     marginTop: 5,
     fontSize: 10,
   }),
@@ -103,7 +103,7 @@ const styles = StyleSheet.create({
     width: getSize.s(20),
     height: getSize.s(20),
     resizeMode: 'contain',
-    tintColor: isFocused ? COLORS.lightGreen : COLORS.black,
+    tintColor: isFocused ? COLORS.primary : COLORS.black,
   }),
   containerStyle: {
     position: 'absolute',

@@ -1,6 +1,6 @@
 import Stack from './StackNavigator';
-import AdminTab from './TabNavigation';
+import TabNavigation from './TabNavigation';
 import CustomTabBar from './CustomTabBar';
 
-export const StackStep = {Stack, AdminTab, CustomTabBar};
+export const StackStep = {Stack, TabNavigation, CustomTabBar};
 

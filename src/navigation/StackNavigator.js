@@ -1,16 +1,14 @@
 import React, {useState, useEffect} from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {admin, authen} from './../screens';
+import {common, authen} from './../screens';
 import {StatusBar} from 'react-native';
 
 import {StackStep} from './';
 const Stack = createNativeStackNavigator();
 
-const MainStackNavigator = ({initialRoute = 'Splash'}) => {
+const MainStackNavigator = () => {
   const [isFirstLaunch, setIsFirstLaunch] = useState(null);
-  const [user, setUser] = useState();
-  const [isCheck, setIsCheck] = useState();
 
   let routeName;
 
@@ -47,7 +45,7 @@ const MainStackNavigator = ({initialRoute = 'Splash'}) => {
   } else if (isFirstLaunch == true) {
     routeName = 'Onboard';
   } else {
-    routeName = 'Admin';
+    routeName = 'Common';
   }
 
   return (
@@ -63,14 +61,11 @@ const MainStackNavigator = ({initialRoute = 'Splash'}) => {
         <>
           <Stack.Screen name="Onboard" component={authen.Onboard} />
 
-          <Stack.Screen name="Admin" component={StackStep.AdminTab} />
-          <Stack.Screen name="Linking" component={admin.Linking} />
-          <Stack.Screen name="Content" component={admin.Content} />
-          <Stack.Screen name="Market" component={admin.Market} />
-          <Stack.Screen name="Deti" component={admin.Deti} />
-          <Stack.Screen name="AdminLogin" component={admin.AdminLogin} />
-          <Stack.Screen name="AdminRegister" component={admin.AdminRegister} />
-          <Stack.Screen name="Post" component={admin.Post} />
+          <Stack.Screen name="Common" component={StackStep.TabNavigation} />
+          <Stack.Screen name="Home" component={common.Home} />
+          <Stack.Screen name="Order" component={common.Order} />
+          <Stack.Screen name="MyList" component={common.MyList} />
+          <Stack.Screen name="Profile" component={common.Profile} />
         </>
       </Stack.Navigator>
     </>

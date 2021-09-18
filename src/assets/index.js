@@ -1,11 +1,3 @@
-import {photos, lottie, icons} from './img';
-import {
-  ONBOARD_DATA,
-  DATA_POSTS,
-  DATA_CONTENT,
-  DATA_PRODUCTS,
-} from './data/sources';
+import {photos, icons} from './img';
 
-export {photos, lottie, icons};
-
-export const DATA = {ONBOARD_DATA, DATA_POSTS, DATA_CONTENT, DATA_PRODUCTS};
+export {photos, icons};

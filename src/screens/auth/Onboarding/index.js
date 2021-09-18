@@ -50,7 +50,7 @@ const Onboard = ({navigation}) => {
   };
 
   const handleDone = () => {
-    navigation.navigate('Admin');
+    navigation.navigate('Common');
   };
 
   return (
