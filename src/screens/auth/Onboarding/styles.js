@@ -1,36 +1,38 @@
 import {StyleSheet} from 'react-native';
-import {COLORS} from '../../../constants';
+import {COLORS, FONTS} from '../../../constants';
 
 const styles = StyleSheet.create({
   slide: {
     flex: 1,
     alignItems: 'center',
-    justifyContent: 'center',
     backgroundColor: COLORS.white,
   },
   image: {
-    marginVertical: 60,
+    marginBottom: 40,
   },
   title: {
+    fontFamily: FONTS.gelasioSemiBold,
     fontSize: 24,
-    color: COLORS.dark,
+    fontWeight: '700',
+    color: COLORS.black,
+    lineHeight: 36,
     textAlign: 'center',
-    fontFamily: 'OpenSans-Bold',
-    marginHorizontal: 60,
+    marginHorizontal: 40,
+    marginBottom: 25,
   },
   text: {
+    fontFamily: FONTS.regular,
     fontSize: 14,
-    color: COLORS.gray04,
+    color: COLORS.black,
     textAlign: 'center',
-    fontFamily: 'OpenSans-SemiBold',
     marginHorizontal: 60,
-    marginTop: 20,
+    lineHeight: 16.41,
   },
   dotStyle: {
-    backgroundColor: COLORS.blueFaded,
+    backgroundColor: COLORS.gray05,
   },
   activeDotStyle: {
-    backgroundColor: COLORS.blueOnboard,
+    backgroundColor: COLORS.black,
   },
   rightTextWrapper: {
     width: 40,
@@ -41,9 +43,9 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   rightText: {
-    color: COLORS.blueOnboard,
-    fontFamily: 'OpenSans-SemiBold',
+    color: COLORS.black,
     fontSize: 14,
+    fontFamily: FONTS.semiBold,
   },
   leftTextWrapper: {
     width: 40,
@@ -54,9 +56,9 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   leftText: {
-    color: COLORS.blueOnboard,
-    fontFamily: 'OpenSans-SemiBold',
+    color: COLORS.black,
     fontSize: 14,
+    fontFamily: FONTS.semiBold,
   },
   doneButtonWrapper: {
     flex: 1,
@@ -67,10 +69,10 @@ const styles = StyleSheet.create({
     marginRight: -0,
   },
   doneButtonText: {
+    fontFamily: FONTS.semiBold,
     fontSize: 14,
-    fontFamily: 'OpenSans-SemiBold',
     textAlign: 'center',
-    color: COLORS.white,
+    color: COLORS.black01,
   },
 });
 

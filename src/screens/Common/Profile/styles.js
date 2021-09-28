@@ -5,8 +5,19 @@ import {COLORS} from '../../../constants/theme';
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FAFAFA',
-    paddingHorizontal: 12,
+    backgroundColor: COLORS.white,
+    paddingHorizontal: getSize.m(12),
+  },
+  wrapperHeader: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  wrapperCenter: {
+
+  },
+  wrapperContent: {
+
   },
 });
 export default styles;

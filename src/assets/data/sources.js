@@ -3,19 +3,19 @@ import {photos} from '../../assets';
 
 export const ONBOARD_DATA = [
   {
-    title: 'Save time by tracking your studies',
-    text: 'Schedule your classes, assignments, quizzes and more',
-    image: photos.onboard1,
+    title: 'Welcome to Valen.',
+    text: 'I provide essential stuff for your ui designs every tuesday!.',
+    image: photos.onboard01,
   },
   {
-    title: 'Stay on top of your education',
-    text: 'Reduce your stress, increase your productivity',
-    image: photos.onboard2,
+    title: 'Every Tuesday!',
+    text: 'Make sure to take a look my uplab profile every tuesday',
+    image: photos.onboard02,
   },
   {
-    title: 'Spend more time doing the things you love',
-    text: 'Get started within five minutes',
-    image: photos.onboard3,
+    title: 'Download now!',
+    text: 'You can follow me if you wantand comment on any to get some freebies',
+    image: photos.onboard03,
   },
 ];
 

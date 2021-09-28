@@ -3,7 +3,6 @@ import React from 'react';
 import {Image, Platform, Pressable, StyleSheet, View, Text} from 'react-native';
 import {Badge} from 'react-native-elements';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
-import Icon from 'react-native-vector-icons/Ionicons';
 import {COLORS} from '../constants';
 import {icons} from '../assets';
 
@@ -13,7 +12,7 @@ const CustomTabBar = ({state, descriptors, navigation}) => {
     <View
       style={{
         flexDirection: 'row',
-        backgroundColor: '#fff',
+        backgroundColor: COLORS.white,
         paddingBottom: Platform.OS === 'ios' ? bottom : 10,
         paddingTop: 10,
       }}>
@@ -95,7 +94,7 @@ export default CustomTabBar;
 const styles = StyleSheet.create({
   btn: {flex: 1, alignItems: 'center'},
   textlabel: isFocused => ({
-    color: isFocused ? COLORS.primary : COLORS.black,
+    color: isFocused ? COLORS.red : COLORS.black,
     marginTop: 5,
     fontSize: 10,
   }),
@@ -103,7 +102,7 @@ const styles = StyleSheet.create({
     width: getSize.s(20),
     height: getSize.s(20),
     resizeMode: 'contain',
-    tintColor: isFocused ? COLORS.primary : COLORS.black,
+    tintColor: isFocused ? COLORS.red : COLORS.black,
   }),
   containerStyle: {
     position: 'absolute',
@@ -111,5 +110,5 @@ const styles = StyleSheet.create({
     top: getSize.s(-7),
     right: getSize.s(21),
   },
-  badgeStyle: {borderColor: '#fff', borderWidth: 1},
+  badgeStyle: {borderColor: COLORS.white, borderWidth: 1},
 });
